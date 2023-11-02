@@ -35,7 +35,7 @@ const About = () => {
           <HiOutlineMail size={30} />
         </a>
 
-        <a href="/">
+        <a href="Resume.pdf">
           <BsFillPersonLinesFill size={30} />
         </a>
       </HStack>

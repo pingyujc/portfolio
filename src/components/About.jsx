@@ -84,7 +84,7 @@ const About = () => {
           <br />
           <br />
           Lately, I've been focusing on building trading algorithms, smart
-          contratcs and backend developement.
+          contracts and backend developement.
         </p>
       </div>
     </Box>

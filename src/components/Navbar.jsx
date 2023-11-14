@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <div
       className={`fixed w-full h-[80px] flex justify-between items-center px-4 ${
-        colorMode === "light" ? "bg-[#e2e1e1] text-black" : "bg-[#0a192f]"
+        colorMode === "light" ? "bg-[#f0f1f8] text-black" : "bg-[#0a192f]"
       } text-gray-300`}
     >
       {/* <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300"> */}

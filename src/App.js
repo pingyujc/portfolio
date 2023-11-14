@@ -1,10 +1,5 @@
 import "./App.css";
-import {
-  ChakraProvider,
-  useColorMode,
-  IconButton,
-  Icon,
-} from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 import Navbar from "./components/Navbar";
 import About from "./components/About";
 import Projects from "./components/Projects";
@@ -17,7 +12,8 @@ function App() {
   return (
     <div className="">
       <Navbar />
-      <br />
+      {/* create some space between nav bar and the rest of content */}
+      <Box height={"100px"}> space</Box>
       <br />
       <About />
       <br />

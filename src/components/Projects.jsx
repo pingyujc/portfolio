@@ -1,6 +1,7 @@
 import React from "react";
 import { Box, Flex, Image, Text, Button } from "@chakra-ui/react";
 import FT_Bot from "../assets/FT_bot.png";
+import GauchoRide from "../assets/GauchoRide.png";
 import { FaLink, FaGithub, FaGithubSquare } from "react-icons/fa";
 
 const buttonLikeBoxStyle = {
@@ -178,7 +179,7 @@ const Projects = () => {
           <Box width={{ base: "100%", md: "50%" }} pr={{ base: 0, md: 4 }}>
             <Flex align="center">
               <Text fontWeight="bold" mr={2}>
-                Legacy Project
+                GauchoRide
               </Text>
               {/* Add icons here */}
               {/* <FaLink /> */}
@@ -187,8 +188,9 @@ const Projects = () => {
               </a>
             </Flex>
             <Text mb={4}>
-              Description of Project 1 goes here. You can provide more details
-              about the project.
+              GauchoRide is a UCSB course search app that provides informtation
+              about live course , past course offerings, and enrollment history
+              of courses at UCSB.
             </Text>
             {/* For the tech stack */}
             <Flex>
@@ -203,7 +205,7 @@ const Projects = () => {
           {/* Image */}
           <Box width={{ base: "100%", md: "46%" }}>
             <Image
-              src="" // Replace with the actual path to your image
+              src={GauchoRide}
               alt="Legacy Code"
               mb={4}
               borderRadius="md"

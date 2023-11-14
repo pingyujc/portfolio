@@ -12,15 +12,17 @@ import { BsFillPersonLinesFill } from "react-icons/bs";
 
 const About = () => {
   const { colorMode, toggleColorMode } = useColorMode();
+  const textColor = colorMode === "light" ? "text-[#182550]" : "text-[#E7F1FF]";
 
   return (
     // <Box className="w-full flex items-center justify-center flex-col text-center mt-[80px] ">
     <Box id="About" margin={{ base: 0, md: 10 }} pr={20} pl={20}>
       <Box className="w-full flex items-center justify-center flex-col text-center ">
-        <p className="text-[#182550] text-left">Hi, my name is</p>
-        <h1 className="text-4xl sm:text-5xl font-bold text-[#182550] text-left">
+        <p className={` text-left ${textColor}`}>Hi, my name is</p>
+        <h1 className={`text-4xl sm:text-5xl font-bold ${textColor} text-left`}>
           JONATHAN CHEN
         </h1>
+
         <h2 className="mb-4 text-left">
           A CS student at the University of California, Santa Barbara
         </h2>
@@ -83,8 +85,8 @@ const About = () => {
           </Link>
           <br />
           <br />
-          Lately, I've been focusing on building trading algorithms, smart
-          contracts and backend developement.
+          Lately, I've been focusing on trading algorithms, blockchain
+          applications, and just building cool stuff.
         </p>
       </div>
     </Box>

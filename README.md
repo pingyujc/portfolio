@@ -1,3 +1,7 @@
+visit the website here => https://www.jonathan-tech.com/
+
+<img width="1497" alt="image" src="https://github.com/pingyujc/portfolio/assets/75823989/77962a55-030f-4e90-baf9-ffe5c0db348f">
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

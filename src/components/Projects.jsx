@@ -2,7 +2,14 @@ import React from "react";
 import { Box, Flex, Image, Text, Button } from "@chakra-ui/react";
 import FT_Bot from "../assets/FT_bot.png";
 import HappyCows from "../assets/HappyCows.png";
-import { FaLink, FaGithub, FaGithubSquare } from "react-icons/fa";
+import StarsRus from "../assets/StarsRus.png";
+import SQL from "../assets/SQL.png";
+import {
+    FaLink,
+    FaGithub,
+    FaGithubSquare,
+    FaExternalLinkAlt,
+} from "react-icons/fa";
 
 const buttonLikeBoxStyle = {
     display: "inline-block",
@@ -59,7 +66,7 @@ const Projects = () => {
                         </Text>
                         <Box mt={2}>
                             {/* For the tech stack */}
-                            <Flex>
+                            <Flex mb={5}>
                                 <Box {...buttonLikeBoxStyle}>Python</Box>
                                 <Box {...buttonLikeBoxStyle}>API</Box>
                                 <Box {...buttonLikeBoxStyle}>Telegram</Box>
@@ -74,57 +81,6 @@ const Projects = () => {
                         <Image
                             src={FT_Bot} // Replace with the actual path to your image
                             alt="FrienTech Bot"
-                            mb={4}
-                            borderRadius="md"
-                        />
-                    </Box>
-                </Box>
-                {/* Job Board */}
-                <Box
-                    width={"100%"}
-                    mb={8}
-                    display="flex" // Use flex display to control alignment
-                    flexDirection={{ base: "column", md: "row" }} // Stack on small screens, side-by-side on medium screens
-                    alignItems={{ base: "flex-start", md: "center" }} // Align items at the start (top) on small screens, center on medium screens
-                >
-                    {/* Text content */}
-                    <Box
-                        width={{ base: "100%", md: "50%" }}
-                        pr={{ base: 0, md: 4 }}
-                    >
-                        <Flex align="center">
-                            <Text fontWeight="bold" mr={2}>
-                                BZD Job Board
-                            </Text>
-                            {/* Add icons here */}
-                            {/* <FaLink /> */}
-                            <a
-                                href=""
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <FaGithubSquare />
-                            </a>
-                        </Flex>
-                        <Text mb={4}>
-                            A job board built for entry level and internships
-                            opportunities within the Web3 space.
-                        </Text>
-                        {/* For the tech stack */}
-                        <Flex>
-                            <Box {...buttonLikeBoxStyle}>React</Box>
-                            <Box {...buttonLikeBoxStyle}>MySQL</Box>
-                            <Box {...buttonLikeBoxStyle}>Python</Box>
-                            <Box {...buttonLikeBoxStyle}>Javascript</Box>
-                        </Flex>
-                    </Box>
-                    {/* Space between text and image */}
-                    <Box width={{ base: "100%", md: "4%" }} />
-                    {/* Image */}
-                    <Box width={{ base: "100%", md: "46%" }}>
-                        <Image
-                            src="" // Replace with the actual path to your image
-                            alt="BZD Job Board"
                             mb={4}
                             borderRadius="md"
                         />
@@ -161,12 +117,13 @@ const Projects = () => {
                             A software system built on top on autonomus
                             databases for stock brokerage.
                             <br />
-                            The system provides function like maintaining
-                            information, generating reports, and processing
-                            transactions.
+                            This project includes designing, creating, and
+                            manimulating databases using JDBC, also creates
+                            system functions such as generating monthly report,
+                            and buying and selling stocks.
                         </Text>
                         {/* For the tech stack */}
-                        <Flex>
+                        <Flex mb={5}>
                             <Box {...buttonLikeBoxStyle}>Java</Box>
                             <Box {...buttonLikeBoxStyle}>JDBS</Box>
                             <Box {...buttonLikeBoxStyle}>SQL</Box>
@@ -176,13 +133,30 @@ const Projects = () => {
                     {/* Space between text and image */}
                     <Box width={{ base: "100%", md: "4%" }} />
                     {/* Image */}
-                    <Box width={{ base: "100%", md: "46%" }}>
-                        <Image
-                            src="" // Replace with the actual path to your image
-                            alt="StarsRus"
-                            mb={4}
-                            borderRadius="md"
-                        />
+                    <Box
+                        width={{ base: "100%", md: "46%" }}
+                        display="flex"
+                        flexDirection={{ base: "column", md: "row" }}
+                    >
+                        <Box
+                            width={{ base: "100%", md: "46%" }}
+                            marginRight={{ md: "4%" }}
+                        >
+                            <Image
+                                src={StarsRus}
+                                alt="StarsRus"
+                                mb={4}
+                                borderRadius="md"
+                            />
+                        </Box>
+                        <Box width={{ base: "100%", md: "46%" }}>
+                            <Image
+                                src={SQL}
+                                alt="SQL"
+                                mb={4}
+                                borderRadius="md"
+                            />
+                        </Box>
                     </Box>
                 </Box>
                 {/* CS156 project */}
@@ -205,11 +179,19 @@ const Projects = () => {
                             {/* Add icons here */}
                             {/* <FaLink /> */}
                             <a
-                                href=""
+                                href="https://github.com/ucsb-cs156-f23/proj-happycows-f23-5pm-1"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                style={{ marginRight: "10px" }}
+                            >
+                                <FaGithubSquare />
+                            </a>
+                            <a
+                                href="https://5pm-1-happycows.dokku-01.cs.ucsb.edu/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                <FaGithubSquare />
+                                <FaExternalLinkAlt />
                             </a>
                         </Flex>
                         <Text mb={4}>
@@ -218,7 +200,7 @@ const Projects = () => {
                             Commons.
                         </Text>
                         {/* For the tech stack */}
-                        <Flex>
+                        <Flex mb={5}>
                             <Box {...buttonLikeBoxStyle}>React</Box>
                             <Box {...buttonLikeBoxStyle}>Java</Box>
                             <Box {...buttonLikeBoxStyle}>Postgres</Box>
@@ -243,3 +225,56 @@ const Projects = () => {
 };
 
 export default Projects;
+
+// {/* Job Board */}
+
+// <Box
+//     width={"100%"}
+//     mb={8}
+//     display="flex" // Use flex display to control alignment
+//     flexDirection={{ base: "column", md: "row" }} // Stack on small screens, side-by-side on medium screens
+//     alignItems={{ base: "flex-start", md: "center" }} // Align items at the start (top) on small screens, center on medium screens
+// >
+//     {/* Text content */}
+//     <Box
+//         width={{ base: "100%", md: "50%" }}
+//         pr={{ base: 0, md: 4 }}
+//     >
+//         <Flex align="center">
+//             <Text fontWeight="bold" mr={2}>
+//                 BZD Job Board
+//             </Text>
+//             {/* Add icons here */}
+//             {/* <FaLink /> */}
+//             <a
+//                 href=""
+//                 target="_blank"
+//                 rel="noopener noreferrer"
+//             >
+//                 <FaGithubSquare />
+//             </a>
+//         </Flex>
+//         <Text mb={4}>
+//             A job board built for entry level and internships
+//             opportunities within the Web3 space.
+//         </Text>
+//         {/* For the tech stack */}
+//         <Flex>
+//             <Box {...buttonLikeBoxStyle}>React</Box>
+//             <Box {...buttonLikeBoxStyle}>MySQL</Box>
+//             <Box {...buttonLikeBoxStyle}>Python</Box>
+//             <Box {...buttonLikeBoxStyle}>Javascript</Box>
+//         </Flex>
+//     </Box>
+//     {/* Space between text and image */}
+//     <Box width={{ base: "100%", md: "4%" }} />
+//     {/* Image */}
+//     <Box width={{ base: "100%", md: "46%" }}>
+//         <Image
+//             src="" // Replace with the actual path to your image
+//             alt="BZD Job Board"
+//             mb={4}
+//             borderRadius="md"
+//         />
+//     </Box>
+// </Box>

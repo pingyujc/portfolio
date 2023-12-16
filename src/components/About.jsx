@@ -96,7 +96,16 @@ const About = () => {
                         color={"blue.600"}
                     >
                         {" "}
-                        ChainGem.{" "}
+                        ChainGem{" "}
+                    </Link>
+                    and
+                    <Link
+                        href="https://www.continuumcrypto.com/"
+                        isExternal
+                        color={"blue.600"}
+                    >
+                        {" "}
+                        Continuum.{" "}
                     </Link>
                     <br />
                     <br />

@@ -1,18 +1,14 @@
 import React from "react";
-import { Box, Flex, Image, Text, Button } from "@chakra-ui/react";
+import { Box, Flex, Image, Text } from "@chakra-ui/react";
 import FT_Bot from "../assets/FT_bot.png";
 import HappyCows from "../assets/HappyCows.png";
 import StarsRus from "../assets/StarsRus.png";
 import SQL from "../assets/SQL.png";
-import continuumHome from "../assets/continuum_home.png";
+import jobs_csv from "../assets/jobs_csv.png";
+// import continuumHome from "../assets/continuum_home.png";
 import continuumApp from "../assets/continuum_app.png";
 
-import {
-    FaLink,
-    FaGithub,
-    FaGithubSquare,
-    FaExternalLinkAlt,
-} from "react-icons/fa";
+import { FaGithubSquare, FaExternalLinkAlt } from "react-icons/fa";
 
 const buttonLikeBoxStyle = {
     display: "inline-block",
@@ -85,6 +81,60 @@ const Projects = () => {
                         <Image
                             src={continuumApp} // Replace with the actual path to your image
                             alt="Continuum App"
+                            mb={4}
+                            borderRadius="md"
+                        />
+                    </Box>
+                </Box>
+                {/* Crypto Job Board */}
+                <Box
+                    width={"100%"}
+                    mb={8}
+                    display="flex" // Use flex display to control alignment
+                    flexDirection={{ base: "column", md: "row" }} // Stack on small screens, side-by-side on medium screens
+                    alignItems={{ base: "flex-start", md: "center" }} // Align items at the start (top) on small screens, center on medium screens
+                >
+                    {/* Text content */}
+                    <Box
+                        width={{ base: "100%", md: "50%" }}
+                        pr={{ base: 0, md: 4 }}
+                    >
+                        <Flex align="center">
+                            <Text fontWeight="bold" mr={2}>
+                                Crypto Job Board
+                            </Text>
+                            {/* Add icons here */}
+                            {/* <FaLink /> */}
+                            <a
+                                href="https://github.com/pingyujc/BlockEntry"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <FaGithubSquare />
+                            </a>
+                        </Flex>
+                        <Text mb={4}>
+                            A crypto job board for Blockchain enthusiasts.
+                            <br />
+                            Used python and selenium to scrape the web. Storing
+                            job listing data in both csv files and firebase for
+                            different uses.
+                        </Text>
+                        <Box mt={2}>
+                            {/* For the tech stack */}
+                            <Flex mb={5}>
+                                <Box {...buttonLikeBoxStyle}>Python</Box>
+                                <Box {...buttonLikeBoxStyle}>Firebase</Box>
+                            </Flex>
+                        </Box>
+                    </Box>
+                    {/* Space between text and image */}
+                    <Box width={{ base: "100%", md: "4%" }} />
+                    {/* Image */}
+                    <Box width={{ base: "100%", md: "46%" }}>
+                        <Image
+                            src={jobs_csv} // Replace with the actual path to your image
+                            alt="jobs_csv"
                             mb={4}
                             borderRadius="md"
                         />

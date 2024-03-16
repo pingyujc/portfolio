@@ -98,15 +98,15 @@ const About = () => {
                         {" "}
                         ChainGem{" "}
                     </Link>
-                    and
+                    and leading research team at
                     <Link
-                        href="https://www.continuumcrypto.com/"
+                        href="https://blockchainucsb.com/"
                         isExternal
                         color={"blue.600"}
                     >
                         {" "}
-                        Continuum.{" "}
-                    </Link>
+                        Blockchain UCSB.
+                    </Link>{" "}
                     <br />
                     <br />
                     Lately, I've been focusing on trading algorithms, blockchain

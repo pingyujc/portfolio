@@ -45,10 +45,10 @@ const Projects = () => {
                             <Text fontWeight="bold" mr={2}>
                                 Continuum
                             </Text>
-                            {/* Add icons here */}
+                            {/* Add icons here */}``
                             {/* <FaLink /> */}
                             <a
-                                href="https://www.continuumcrypto.com/"
+                                href="https://continuumcrypto.carrd.co/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >

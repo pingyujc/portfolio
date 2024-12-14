@@ -27,7 +27,7 @@ const About = () => {
                 </h1>
 
                 <h2 className="mb-4 text-left">
-                    A CS student at the University of California, Santa Barbara
+                    A Full Stack Enginner, graduated from the University of California, Santa Barbara 
                 </h2>
 
                 {/* Social Icons */}
@@ -61,17 +61,26 @@ const About = () => {
                     </span>
                     <br />
                     <br />
-                    Currently a senior CS student at UC Santa Barbar with strong
-                    passion in learning new technogies and coding.
+                    Graduated from UC Santa Barbara, majoring in Computer Science,
+                    currently working as a Full Stack Software Engineer at C3 AI.
                     <br />
-                    I have experience coding regarding databases, APIs, and
-                    algorithms.
+                    I have experience regarding in building full-stack applications
+                    from the front end to the back end.
                     <br />
                     <br />
                     I am also a blockchain enthusiast who has explored the Web3
-                    world for more than 3 years.
+                    world for more than 4 years.
                     <br />
                     Previously interned at
+                    <Link
+                        href="https://scale.com/"
+                        isExternal
+                        color={"blue.600"}
+                    >
+                        {" "}
+                        Scale AI{" "}
+                    </Link>
+                    ,
                     <Link
                         href="https://lootex.io/"
                         isExternal
@@ -89,7 +98,7 @@ const About = () => {
                         {" "}
                         XY Finance
                     </Link>
-                    , now running
+                    , made
                     <Link
                         href="https://chaingem.beehiiv.com/subscribe/"
                         isExternal
@@ -98,7 +107,7 @@ const About = () => {
                         {" "}
                         ChainGem{" "}
                     </Link>
-                    and leading research team at
+                    and led research team at
                     <Link
                         href="https://blockchainucsb.com/"
                         isExternal
@@ -109,8 +118,7 @@ const About = () => {
                     </Link>{" "}
                     <br />
                     <br />
-                    Lately, I've been focusing on trading algorithms, blockchain
-                    applications, and just building cool stuff.
+                    Lately, I've been focusing exploring new opportunities, and exploring new business ideas in both Web2 and Web3 space.
                 </p>
             </div>
         </Box>

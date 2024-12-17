@@ -62,7 +62,16 @@ const About = () => {
                     <br />
                     <br />
                     Graduated from UC Santa Barbara, majoring in Computer Science,
-                    currently working as a Full Stack Software Engineer at C3 AI.
+                    currently working as a Full Stack Software Engineer at 
+                    <Link
+                        href="https://c3.ai/"
+                        isExternal
+                        color={"blue.600"}
+                    >
+                        {" "}
+                        C3 AI{" "}
+                    </Link>
+                    .
                     <br />
                     I have experience regarding in building full-stack applications
                     from the front end to the back end.
